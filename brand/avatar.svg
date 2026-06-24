@@ -1,0 +1,17 @@
+<svg width="1024" height="1024" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- Vitrine Kit org avatar: a minimal storefront (vitrine = shop window) -->
+  <rect x="0" y="0" width="512" height="512" fill="#111111"/>
+
+  <!-- Awning valance (solid top band) -->
+  <rect x="150" y="148" width="212" height="22" rx="7" fill="#ffffff"/>
+
+  <!-- Awning scalloped stripes (white slats; the dark gaps are the stripes) -->
+  <path d="M150,170 L192.4,170 L192.4,196 A21.2 21.2 0 0 1 150 196 Z" fill="#ffffff"/>
+  <path d="M234.8,170 L277.2,170 L277.2,196 A21.2 21.2 0 0 1 234.8 196 Z" fill="#ffffff"/>
+  <path d="M319.6,170 L362,170 L362,196 A21.2 21.2 0 0 1 319.6 196 Z" fill="#ffffff"/>
+
+  <!-- Display window (the vitrine) -->
+  <rect x="176" y="236" width="160" height="132" rx="16" fill="none" stroke="#ffffff" stroke-width="18"/>
+  <line x1="188" y1="276" x2="324" y2="276" stroke="#ffffff" stroke-width="14" stroke-linecap="round"/>
+  <line x1="256" y1="276" x2="256" y2="356" stroke="#ffffff" stroke-width="14" stroke-linecap="round"/>
+</svg>
