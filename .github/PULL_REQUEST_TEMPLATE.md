@@ -1,18 +1,18 @@
-## Что меняется
+## What changes
 
-<!-- Кратко: суть изменения и зачем оно нужно. -->
+<!-- Briefly: the gist of the change and why it's needed. -->
 
-## Тип изменения
+## Type of change
 
-- [ ] Багфикс
-- [ ] Новая фича
-- [ ] Рефакторинг / внутреннее
-- [ ] Документация
+- [ ] Bug fix
+- [ ] New feature
+- [ ] Refactoring / internal
+- [ ] Documentation
 
-## Чеклист
+## Checklist
 
-- [ ] `pnpm build && pnpm typecheck && pnpm test` — зелёные
-- [ ] При правке реестра/шаблонов: `pnpm typecheck:registry` / `pnpm typecheck:templates`
-- [ ] `pnpm lint` зелёный; `pnpm schemas` без дрейфа (`git diff --exit-code schemas`)
-- [ ] Добавлен **changeset** (`pnpm changeset`), если менялся публикуемый пакет
-- [ ] Контракты менялись только **аддитивно** (или это осознанный major)
+- [ ] `pnpm build && pnpm typecheck && pnpm test` — green
+- [ ] When touching the registry/templates: `pnpm typecheck:registry` / `pnpm typecheck:templates`
+- [ ] `pnpm lint` green; `pnpm schemas` with no drift (`git diff --exit-code schemas`)
+- [ ] A **changeset** added (`pnpm changeset`) if a published package changed
+- [ ] Contracts changed **additively** only (or this is a deliberate major)

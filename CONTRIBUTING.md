@@ -1,45 +1,45 @@
-# Контрибьютинг в Vitrine Kit
+# Contributing to Vitrine Kit
 
-Спасибо за интерес! Правила действуют для репозиториев [@vitrine-kit](https://github.com/vitrine-kit).
+Thanks for your interest! These rules apply to the [@vitrine-kit](https://github.com/vitrine-kit) repositories.
 
-## Окружение
+## Environment
 
 - **Node 20 LTS** + **pnpm** (`corepack enable`).
-- `pnpm install` в корне монорепо. Пакеты `@vitrine-kit/*` публичны — токен не нужен.
+- `pnpm install` at the monorepo root. The `@vitrine-kit/*` packages are public — no token needed.
 
-## Перед PR — зелёный гейт
+## Before a PR — a green gate
 
 ```bash
 pnpm build && pnpm typecheck && pnpm test
-# если трогали реестр/шаблоны:
+# if you touched the registry/templates:
 pnpm typecheck:registry && pnpm typecheck:templates
 pnpm lint
-pnpm schemas   # и убедитесь, что нет дрейфа: git diff --exit-code schemas
+pnpm schemas   # and make sure there's no drift: git diff --exit-code schemas
 ```
 
-## Конвенции
+## Conventions
 
-- **Контракты (`@vitrine-kit/contracts`) расширяются только аддитивно** (semver). Менять форму
-  существующих полей — ломающее изменение (major) и осознанное решение.
-- **Куда класть код:** в пакеты — то, где баг = инцидент у всех (контракт, платёж, заказ);
-  в реестр — то, что расходится под клиента (вид, секции).
-- Новая фича реестра зависит **только от контрактов** (проверяется import-boundary).
-- **Язык кода и документации — русский** (комментарии, сообщения, доки); совпадайте по стилю
-  и плотности комментариев.
-- **biome formatter выключен** — соблюдайте существующий стиль вручную, lint держите зелёным.
+- **The contracts (`@vitrine-kit/contracts`) are extended additively only** (semver). Changing the shape
+  of existing fields is a breaking change (major) and a deliberate decision.
+- **Where to put code:** in the packages — what makes a bug an incident for everyone (contract, payment, order);
+  in the registry — what varies per client (look, sections).
+- A new registry feature depends **only on the contracts** (checked by the import-boundary test).
+- **The language of the code and documentation is English** (comments, messages, docs); match the existing style
+  and comment density.
+- **The biome formatter is off** — keep the existing style by hand, keep lint green.
 
-## Версии и публикация
+## Versions and publishing
 
-Любое изменение публикуемого пакета сопровождается changeset:
+Any change to a published package comes with a changeset:
 
 ```bash
 pnpm changeset
 ```
 
-Бамп версий и публикация в npm — автоматикой CI на merge в `main`. Не запускайте `version` /
-`publish` вручную.
+Version bumps and publishing to npm are automated by CI on merge to `main`. Do not run `version` /
+`publish` by hand.
 
 ## Pull requests
 
-- Ветка от `main`; PR с заполненным шаблоном (включая пункт «добавлен changeset»).
-- PR должен проходить CI (build / typecheck / test / lint / schemas).
+- Branch from `main`; a PR with the template filled in (including the "changeset added" item).
+- The PR must pass CI (build / typecheck / test / lint / schemas).

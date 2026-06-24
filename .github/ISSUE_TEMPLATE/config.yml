@@ -1,5 +1,5 @@
 blank_issues_enabled: false
 contact_links:
-  - name: Вопрос или обсуждение
+  - name: Question or discussion
     url: https://github.com/vitrine-kit/vitrine/discussions
-    about: Для вопросов, идей и обсуждений используйте Discussions, а не issue.
+    about: For questions, ideas and discussions use Discussions, not an issue.

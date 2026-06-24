@@ -1,21 +1,21 @@
-name: Предложение фичи
-description: Предложить улучшение или новую возможность
+name: Feature request
+description: Propose an improvement or a new capability
 labels: [enhancement]
 body:
   - type: textarea
     id: problem
     attributes:
-      label: Проблема / мотивация
-      description: Какую задачу это решает? Почему важно?
+      label: Problem / motivation
+      description: What does this solve? Why does it matter?
     validations:
       required: true
   - type: textarea
     id: proposal
     attributes:
-      label: Предлагаемое решение
+      label: Proposed solution
     validations:
       required: true
   - type: textarea
     id: alternatives
     attributes:
-      label: Рассмотренные альтернативы
+      label: Alternatives considered

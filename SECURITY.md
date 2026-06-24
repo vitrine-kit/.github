@@ -1,17 +1,17 @@
-# Политика безопасности
+# Security policy
 
-## Поддерживаемые версии
+## Supported versions
 
-Исправления безопасности выпускаются для последнего минорного релиза каждого пакета
-`@vitrine-kit/*`.
+Security fixes are released for the latest minor release of each
+`@vitrine-kit/*` package.
 
-## Как сообщить об уязвимости
+## How to report a vulnerability
 
-**Не открывайте публичный issue для уязвимостей.** Вместо этого:
+**Do not open a public issue for vulnerabilities.** Instead:
 
-- приватный репорт через GitHub Security Advisories — вкладка **Security → Report a vulnerability**
-  в [репозитории vitrine](https://github.com/vitrine-kit/vitrine/security/advisories/new); либо
-- письмо на **mdavydov@protonmail.com**.
+- report privately via GitHub Security Advisories — the **Security → Report a vulnerability** tab
+  in the [vitrine repository](https://github.com/vitrine-kit/vitrine/security/advisories/new); or
+- email **mdavydov@protonmail.com**.
 
-Укажите затронутый пакет и версию, шаги воспроизведения и потенциальное влияние. Мы подтвердим
-получение в течение нескольких рабочих дней и согласуем сроки раскрытия и выпуска фикса.
+Include the affected package and version, reproduction steps, and the potential impact. We will
+acknowledge receipt within a few business days and agree on a disclosure timeline and a fix release.

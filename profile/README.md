@@ -1,34 +1,34 @@
 # Vitrine Kit
 
-**Агентский стартер-кит для интернет-магазинов и каталогов.** Реестр фич в стиле
-shadcn/ui (copy-in), но для **целых фич магазина**, за пятью стабильными контрактами
-(**Tokens · Data · Slots · Config · Blueprint**). Один клиент = один репозиторий; уникальный
-дизайн применяется ИИ-шагом.
+**An agentic starter kit for online stores and catalogs.** A feature registry in the
+shadcn/ui style (copy-in), but for **whole store features**, behind five stable contracts
+(**Tokens · Data · Slots · Config · Blueprint**). One client = one repository; the unique
+design is applied by an AI step.
 
-## Два канала доставки
+## Two delivery channels
 
-- **npm-пакеты** [`@vitrine-kit/*`](https://www.npmjs.com/org/vitrine-kit) (semver, публичный npm) —
-  `contracts`, `core`, `payload-blueprint` и CLI `vitrine`. Сюда кладут критлогику: баг = инцидент
-  у всех клиентов сразу (контракты, платёж, заказ).
-- **copy-in реестр фич** — каталог, страница товара, корзина, checkout
-  (Stripe / Paddle / YooKassa), SEO. Фичи копируются в репозиторий клиента (как shadcn/ui) —
-  клиент владеет кодом и стилизует его токенами, не меняя логику.
+- **npm packages** [`@vitrine-kit/*`](https://www.npmjs.com/org/vitrine-kit) (semver, public npm) —
+  `contracts`, `core`, `payload-blueprint` and the `vitrine` CLI. This is where the critical logic
+  lives: a bug = an incident for every client at once (contracts, payment, order).
+- **copy-in feature registry** — catalog, product page, cart, checkout
+  (Stripe / Paddle / YooKassa), SEO. Features are copied into the client's repository (like shadcn/ui) —
+  the client owns the code and styles it with tokens, without changing the logic.
 
-## Быстрый старт
+## Quick start
 
 ```bash
 npm i -g @vitrine-kit/vitrine
 vitrine init my-shop
 ```
 
-Дальше — через ИИ-агента: в созданном репозитории есть `CLAUDE.md` и слэш-команды Claude Code
+Then — via an AI agent: the created repository has a `CLAUDE.md` and Claude Code slash commands
 (`/setup`, `/design`, `/add-feature`, `/update`, `/doctor`).
 
-## Репозитории
+## Repositories
 
-- [**vitrine**](https://github.com/vitrine-kit/vitrine) — монорепо: контракты, core,
-  payload-blueprint, CLI, copy-in реестр фич и шаблоны клиентского репозитория.
+- [**vitrine**](https://github.com/vitrine-kit/vitrine) — the monorepo: contracts, core,
+  payload-blueprint, the CLI, the copy-in feature registry and the client repository templates.
 
-## Лицензия
+## License
 
 [MIT](https://github.com/vitrine-kit/vitrine/blob/main/LICENSE).

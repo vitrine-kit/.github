@@ -1,36 +1,36 @@
-name: Баг-репорт
-description: Сообщить об ошибке в Vitrine Kit
+name: Bug report
+description: Report a bug in Vitrine Kit
 labels: [bug]
 body:
   - type: markdown
     attributes:
-      value: Спасибо за репорт. Сначала проверьте, что такой баг ещё не заведён.
+      value: Thanks for the report. First, please check that this bug isn't already filed.
   - type: input
     id: area
     attributes:
-      label: Пакет / область
-      placeholder: "@vitrine-kit/core, CLI, registry/cart, шаблон backend-payload…"
+      label: Package / area
+      placeholder: "@vitrine-kit/core, CLI, registry/cart, backend-payload template…"
     validations:
       required: true
   - type: input
     id: version
     attributes:
-      label: Версия
-      placeholder: "напр. @vitrine-kit/core@0.1.0, vitrine CLI 0.1.2"
+      label: Version
+      placeholder: "e.g. @vitrine-kit/core@0.1.0, vitrine CLI 0.1.2"
   - type: textarea
     id: steps
     attributes:
-      label: Шаги воспроизведения
+      label: Steps to reproduce
     validations:
       required: true
   - type: textarea
     id: behaviour
     attributes:
-      label: Ожидаемое vs фактическое поведение
+      label: Expected vs actual behavior
     validations:
       required: true
   - type: textarea
     id: env
     attributes:
-      label: Окружение
+      label: Environment
       placeholder: "OS, Node, pnpm, backend (payload/vendure)"
