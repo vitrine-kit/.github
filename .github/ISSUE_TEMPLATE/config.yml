@@ -1,3 +1,11 @@
-# Discussions are disabled, so allow a blank issue for questions/ideas
-# alongside the bug-report and feature-request templates.
-blank_issues_enabled: true
+blank_issues_enabled: false
+contact_links:
+  - name: Website & docs
+    url: https://vitrine-kit.github.io/vitrine/
+    about: Product overview, tiers, and how the kit works
+  - name: Developer wiki
+    url: https://vitrine-kit.github.io/vitrine/developers/
+    about: Quickstart, CLI reference, architecture, and contracts
+  - name: Report a vulnerability
+    url: https://github.com/vitrine-kit/vitrine/security/advisories/new
+    about: Private security reports only — do not file a public issue

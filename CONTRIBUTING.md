@@ -2,6 +2,8 @@
 
 Thanks for your interest! These rules apply to the [@vitrine-kit](https://github.com/vitrine-kit) repositories.
 
+For docs, support channels, and where to file issues, see [SUPPORT.md](SUPPORT.md).
+
 ## Environment
 
 - **Node 20 LTS** + **pnpm** (`corepack enable`).
