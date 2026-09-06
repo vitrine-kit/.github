@@ -22,7 +22,7 @@ Before filing:
 ## Security
 
 **Do not open a public issue for vulnerabilities.** Follow
-[SECURITY.md](SECURITY.md) (private advisory or email).
+[SECURITY.md](SECURITY.md) (private GitHub advisory only).
 
 ## Contributing
 
